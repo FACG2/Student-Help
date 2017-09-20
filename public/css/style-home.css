@@ -1,0 +1,318 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	max-width: 1000px;
+	width: 100%;
+	margin: auto;
+}
+
+.container-book{
+	max-width: 700px;
+	width: 100%;
+	margin: auto;
+}
+/*start header and logo*/
+header{
+	background-color: #F2F2F2;
+}
+
+.sign-up{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+.sign-up .logo a{
+	text-decoration: none;
+}
+.sign-up .logo a h1{
+	color: #2D9CDB;
+	font-family: Ruda;
+	text-transform: capitalize;
+
+}
+
+.log-sign{
+	display: flex;
+	justify-content: space-between;
+}
+
+.log-sign a{
+	text-decoration: none;
+	color: black;
+	align-self: center;
+	cursor: pointer;
+	font-family: Reem Kufi;
+	text-transform: capitalize;
+	font-size: 18px;
+}
+
+.log-sign a:first-child{
+	margin-right: 10px;
+}
+
+/*end header and logo*/
+
+/*start navbar*/
+nav{
+	background-color: #3C8AB8;
+}
+nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+	font-family: Reem Kufi;
+	color: #FFF;
+	text-transform: capitalize;
+	font-size: 22px;
+	font-weight: bold
+}
+
+nav ul li{
+	cursor: pointer;
+}
+
+/*end navbar*/
+
+/*start slider*/
+
+.sec-slide{
+	background-image: url('../assets/uni.jpg');
+	min-height: 565px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;	
+}
+
+.sec-slide:after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0 , 0 , 0 , .7);
+	position: absolute;
+
+}
+
+.sec-slide p{
+	color: #FFF;
+	z-index: 3333;
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+	text-transform: capitalize;
+	font-weight: 500;
+	font-family: Roboto Slab;
+	line-height: 50px;
+
+}
+
+/*end slider*/
+
+/*start book added*/
+.sec-book-add{
+	padding-bottom: 26px;
+}
+
+.sec-book-add .cont-book{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px 0 20px 0 ;
+	flex-wrap: wrap;
+
+}
+
+.sec-book-add h2{
+	padding: 45px 0 10px 0;
+	text-transform: capitalize;
+	font-family: Roboto Slab;
+	color: #34495E;
+}
+.sec-book-add .book-img-info{
+	width: 23%;
+    text-align: center;
+    border: 1px solid #CCC;
+    margin-right: 3px;
+    padding: 10px ;
+    box-shadow: 3px 3px 25px gray;
+    margin-bottom: 30px
+
+}
+
+.sec-book-add .book-img-info .photo img{
+	width: 100%;
+	
+}
+
+.sec-book-add .book-img-info .photo-info p:first-child{
+	font-size: 19px;
+	padding: 0 0 5px 0;
+}
+
+.sec-book-add .book-img-info .photo-info .font {
+	font-size: 14px;
+}
+
+.sec-book-add .book-img-info .photo-info p{
+    line-height: 23px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.sec-book-add .book-img-info .photo-info .btn-bor{
+	padding: 15px 0;
+}
+.sec-book-add .book-img-info .photo-info button{
+	border:none;
+	padding: 10px 25px;
+	font-size: 14px;
+	text-transform: capitalize;
+	background-color: #3A539B;
+	outline: none;
+	border-radius: 3px;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.sec-book-add .book-img-info .photo-info button:hover{
+	background-color: #BFBFBF;
+}
+
+.sec-book-add .more{
+	text-align: right;
+	text-transform: capitalize;
+	font-size: 16px;
+	padding: 0 0 10px 0;
+}
+
+.sec-book-add .more .arrow{
+	font-size: 23px;
+}
+
+.sec-book-add a{
+	text-decoration: none;
+	color: blue;
+	padding-bottom: 20px;
+}
+
+/*end book added*/
+
+/*start search about book*/
+aside {
+	background-color: #CCC;
+	padding: 20px 0 55px 0;
+}
+
+aside .ser-book{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex:1;
+}
+
+aside .ser-book h2{
+    padding: 45px 0 10px 0;
+    text-transform: capitalize;
+    font-family: Roboto Slab;
+    color: #34495E;	
+    font-size: 34px;
+}
+
+aside .ser-book .form{
+
+}
+
+aside .ser-book .form form label{
+	text-transform: capitalize;
+	font-size: 22px;
+	font-family: Roboto Slab;
+}
+aside .ser-book .form form input{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #585858;
+	text-indent: 10px;
+	outline: none;
+	background-color: #CCC;
+	padding: 10px 0; 
+	width: 450px;
+	font-size: 16px;
+}
+
+aside .ser-book .form form .or{
+	text-align: center;
+	font-size: 16px;
+}
+aside .ser-book .form form button{
+	border:none;
+	background-color: #2ECC71;
+	padding: 10px 25px;
+	text-transform: capitalize;
+	font-size: 18px;
+	color: #FFF;
+	font-weight: 500;
+	outline: none;
+	cursor: pointer;
+}
+
+aside .ser-book .info-book .data-book{
+    text-align: center;
+    padding: 30px 0 0 0;
+
+}
+
+aside .ser-book .info-book .data-book .data{
+    text-transform: capitalize;
+    font-size: 20px;
+
+}
+
+aside .ser-book .info-book .data-book .data p{
+	line-height: 30px;
+	letter-spacing: 2px;
+}
+aside .ser-book .info-book .data-book .img{
+	width: 220px ;
+	height: 300px;
+	position: relative;
+	margin: 0 0 20px 0;
+}
+aside .ser-book .info-book .data-book .img img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*end search about book*/
+
+/*start footer*/
+
+footer{
+	background-color: #3C8AB8;
+	color: #FFF;
+	font-family: Rambla;
+}
+
+footer .foot{
+	font-size: 18px;
+	text-align: center;
+}
+
+footer .foot p{
+	/*text-align: center;*/
+	padding: 12px 0;
+}
+
+footer .foot p span{
+	text-transform: uppercase;
+}
+/*end footer*/
