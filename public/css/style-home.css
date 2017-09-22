@@ -59,12 +59,13 @@ header{
 /*start navbar*/
 nav{
 	background-color: #3C8AB8;
+	box-shadow: 2px 2px 25px #3C8AB8
 }
 nav ul{
 	list-style: none;
 	display: flex;
 	justify-content: space-between;
-	padding: 10px 0;
+	padding: 0px 0;
 	font-family: Reem Kufi;
 	color: #FFF;
 	text-transform: capitalize;
@@ -72,8 +73,19 @@ nav ul{
 	font-weight: bold
 }
 
-nav ul li{
+nav ul a li{
 	cursor: pointer;
+	line-height: 50px;
+	padding: 0 15px;
+}
+nav ul a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+nav ul li:hover{
+	background-color: #FFF;
+	color: #000;
 }
 
 /*end navbar*/
@@ -206,8 +218,26 @@ nav ul li{
 
 /*start search about book*/
 aside {
-	background-color: #CCC;
-	padding: 20px 0 55px 0;
+	/*background-color: #f9f9f9;*/
+	background-image: url('https://lh3.googleusercontent.com/-C8FG0EcVx34/WI8aJ6fxl_I/AAAAAAAAALY/9fT49ABrzWkz8Ac_c4oIsOEBvvrfv8sMwCL0BGAYYCw/s1000-fcrop64=1,00000000ffffffff/ocean-water-animated-gif-5.gif');
+	/*padding: 20px 0 55px 0;*/
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	color: #FFF;
+	position: relative;
+}
+
+aside:after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+
 }
 
 aside .ser-book{
@@ -215,14 +245,18 @@ aside .ser-book{
 	justify-content: space-between;
 	flex-direction: row;
 	flex:1;
+    position: relative;
+    z-index: 4444;	
 }
 
 aside .ser-book h2{
     padding: 45px 0 10px 0;
     text-transform: capitalize;
     font-family: Roboto Slab;
-    color: #34495E;	
+    color:#FFF;
+    /*color: #34495E;	*/
     font-size: 34px;
+
 }
 
 aside .ser-book .form{
@@ -238,13 +272,20 @@ aside .ser-book .form form input{
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	border-bottom: 1px solid #585858;
+	/*border-bottom: 1px solid #585858;*/
+	border-bottom: 1px solid #bbb;
+	color: #FFF;
 	text-indent: 10px;
 	outline: none;
-	background-color: #CCC;
+	background-color: transparent;
+	/*background-color: #f9f9f9;*/
 	padding: 10px 0; 
 	width: 450px;
 	font-size: 16px;
+}
+
+aside .ser-book .form form input::selection{
+	background-color: rgba(142, 142, 224, 0.53) ; 
 }
 
 aside .ser-book .form form .or{
@@ -293,6 +334,121 @@ aside .ser-book .info-book .data-book .img img{
 	left: 0;
 }
 /*end search about book*/
+
+/*start team*/
+main{
+	padding: 40px 0 60px 0;
+}
+main h2{
+	padding: 30px 0 80px 0;
+    text-transform: capitalize;
+    font-family: Roboto Slab;
+    color: #34495E;	
+}
+main .team{
+	display: flex;
+	justify-content: space-between;
+}
+
+main .team .git-fb{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+
+main .team .git-fb a{
+	text-decoration: none;
+	color: black;
+}
+main .team .git-fb a i{
+	cursor: pointer;
+}
+main .team .git-fb a i[class="fa fa-facebook-square fa-2x"]:hover{
+	color: #4267B2;
+	
+}
+
+main .team .git-fb a i[class="fa fa-twitter-square fa-2x"]:hover{
+	color: #2AA9E0;
+}
+
+main .team .git-fb a i[class="fa fa-github-square fa-2x"]:hover{
+	color: brown;
+}
+main .team .ghadeer,
+main .team .moath,
+main .team .mahmoud{
+	text-align: center;
+}
+
+main .team .ghadeer .photo,
+main .team .moath .photo,
+main .team .mahmoud .photo{
+	width: 200px;
+	height: 200px;
+	
+}
+
+main .team .ghadeer .photo img,
+main .team .moath .photo img,
+main .team .mahmoud .photo img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	box-shadow: 3px 3px 25px gray
+}
+
+main .team .bord{
+	border:1px solid rgb(186,186,186);
+	padding: 40px 40px 50px 40px;
+	position: relative;
+	color: rgb(33,33,33);
+	border-radius:5px;
+	-webkit-transition: all 1.2s ease;
+	-moz-transition: all 1.2s ease;
+	-o-transition: all 1.2s ease;
+	-ms-transition: all 1.2s ease;
+	transition: all 1.2s ease;
+	
+}
+
+/*main .team .bord:after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background-color: rgba(211, 188, 200, 0.41)
+}*/
+
+main .team .bord:hover{
+	position: relative;
+	z-index: 3333;
+	box-shadow: 2px 2px 25px rgb(186,186,186);
+	-webkit-transition: all 1.2s ease;
+	-moz-transition: all 1.2s ease;
+	-o-transition: all 1.2s ease;
+	-ms-transition: all 1.2s ease;
+	transition: all 1.2s ease;
+	 transform: perspective(1000px) translateZ(100px);
+	 /*perspective: 1000px;*/
+}
+
+main .head{
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 40px;
+	margin-top: 35px;
+	text-shadow: 1px 1px 15px gray
+}
+
+main .para{
+	line-height: 40px;
+}
+
+
+/*end team*/
 
 /*start footer*/
 
