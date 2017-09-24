@@ -1,0 +1,474 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	max-width: 1000px;
+	width: 100%;
+	margin: auto;
+}
+
+.container-book{
+	max-width: 700px;
+	width: 100%;
+	margin: auto;
+}
+/*start header and logo*/
+header{
+	background-color: #F2F2F2;
+}
+
+.sign-up{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+.sign-up .logo a{
+	text-decoration: none;
+}
+.sign-up .logo a h1{
+	color: #2D9CDB;
+	font-family: Ruda;
+	text-transform: capitalize;
+
+}
+
+.log-sign{
+	display: flex;
+	justify-content: space-between;
+}
+
+.log-sign a{
+	text-decoration: none;
+	color: black;
+	align-self: center;
+	cursor: pointer;
+	font-family: Reem Kufi;
+	text-transform: capitalize;
+	font-size: 18px;
+}
+
+.log-sign a:first-child{
+	margin-right: 10px;
+}
+
+/*end header and logo*/
+
+/*start navbar*/
+nav{
+	background-color: #3C8AB8;
+	box-shadow: 2px 2px 25px #3C8AB8
+}
+nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 0;
+	font-family: Reem Kufi;
+	color: #FFF;
+	text-transform: capitalize;
+	font-size: 22px;
+	font-weight: bold
+}
+
+nav ul a li{
+	cursor: pointer;
+	line-height: 50px;
+	padding: 0 15px;
+}
+nav ul a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+nav ul li:hover{
+	background-color: #FFF;
+	color: #000;
+}
+
+/*end navbar*/
+
+/*start slider*/
+
+.sec-slide{
+	background-image: url('../assets/uni.jpg');
+	min-height: 565px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;	
+}
+
+.sec-slide:after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0 , 0 , 0 , .7);
+	position: absolute;
+
+}
+
+.sec-slide p{
+	color: #FFF;
+	z-index: 3333;
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+	text-transform: capitalize;
+	font-weight: 500;
+	font-family: Roboto Slab;
+	line-height: 50px;
+
+}
+
+/*end slider*/
+
+/*start book added*/
+.sec-book-add{
+	padding-bottom: 26px;
+}
+
+.sec-book-add .cont-book{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px 0 20px 0 ;
+	flex-wrap: wrap;
+
+}
+
+.sec-book-add h2{
+	padding: 45px 0 10px 0;
+	text-transform: capitalize;
+	font-family: Roboto Slab;
+	color: #34495E;
+}
+.sec-book-add .book-img-info{
+	width: 23%;
+    text-align: center;
+    border: 1px solid #CCC;
+    margin-right: 3px;
+    padding: 10px ;
+    box-shadow: 3px 3px 25px gray;
+    margin-bottom: 30px
+
+}
+
+.sec-book-add .book-img-info .photo img{
+	width: 100%;
+	
+}
+
+.sec-book-add .book-img-info .photo-info p:first-child{
+	font-size: 19px;
+	padding: 0 0 5px 0;
+}
+
+.sec-book-add .book-img-info .photo-info .font {
+	font-size: 14px;
+}
+
+.sec-book-add .book-img-info .photo-info p{
+    line-height: 23px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.sec-book-add .book-img-info .photo-info .btn-bor{
+	padding: 15px 0;
+}
+.sec-book-add .book-img-info .photo-info button{
+	border:none;
+	padding: 10px 25px;
+	font-size: 14px;
+	text-transform: capitalize;
+	background-color: #3A539B;
+	outline: none;
+	border-radius: 3px;
+	color: #FFF;
+	cursor: pointer;
+}
+
+.sec-book-add .book-img-info .photo-info button:hover{
+	background-color: #BFBFBF;
+}
+
+.sec-book-add .more{
+	text-align: right;
+	text-transform: capitalize;
+	font-size: 16px;
+	padding: 0 0 10px 0;
+}
+
+.sec-book-add .more .arrow{
+	font-size: 23px;
+}
+
+.sec-book-add a{
+	text-decoration: none;
+	color: blue;
+	padding-bottom: 20px;
+}
+
+/*end book added*/
+
+/*start search about book*/
+aside {
+	/*background-color: #f9f9f9;*/
+	background-image: url('https://lh3.googleusercontent.com/-C8FG0EcVx34/WI8aJ6fxl_I/AAAAAAAAALY/9fT49ABrzWkz8Ac_c4oIsOEBvvrfv8sMwCL0BGAYYCw/s1000-fcrop64=1,00000000ffffffff/ocean-water-animated-gif-5.gif');
+	/*padding: 20px 0 55px 0;*/
+	width: 100%;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	color: #FFF;
+	position: relative;
+}
+
+aside:after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.5);
+
+}
+
+aside .ser-book{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex:1;
+    position: relative;
+    z-index: 4444;	
+}
+
+aside .ser-book h2{
+    padding: 45px 0 10px 0;
+    text-transform: capitalize;
+    font-family: Roboto Slab;
+    color:#FFF;
+    /*color: #34495E;	*/
+    font-size: 34px;
+
+}
+
+aside .ser-book .form{
+
+}
+
+aside .ser-book .form form label{
+	text-transform: capitalize;
+	font-size: 22px;
+	font-family: Roboto Slab;
+}
+aside .ser-book .form form input{
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	/*border-bottom: 1px solid #585858;*/
+	border-bottom: 1px solid #bbb;
+	color: #FFF;
+	text-indent: 10px;
+	outline: none;
+	background-color: transparent;
+	/*background-color: #f9f9f9;*/
+	padding: 10px 0; 
+	width: 450px;
+	font-size: 16px;
+}
+
+aside .ser-book .form form input::selection{
+	background-color: rgba(142, 142, 224, 0.53) ; 
+}
+
+aside .ser-book .form form .or{
+	text-align: center;
+	font-size: 16px;
+}
+aside .ser-book .form form button{
+	border:none;
+	background-color: #2ECC71;
+	padding: 10px 25px;
+	text-transform: capitalize;
+	font-size: 18px;
+	color: #FFF;
+	font-weight: 500;
+	outline: none;
+	cursor: pointer;
+}
+
+aside .ser-book .info-book .data-book{
+    text-align: center;
+    padding: 30px 0 0 0;
+
+}
+
+aside .ser-book .info-book .data-book .data{
+    text-transform: capitalize;
+    font-size: 20px;
+
+}
+
+aside .ser-book .info-book .data-book .data p{
+	line-height: 30px;
+	letter-spacing: 2px;
+}
+aside .ser-book .info-book .data-book .img{
+	width: 220px ;
+	height: 300px;
+	position: relative;
+	margin: 0 0 20px 0;
+}
+aside .ser-book .info-book .data-book .img img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+/*end search about book*/
+
+/*start team*/
+main{
+	padding: 40px 0 60px 0;
+}
+main h2{
+	padding: 30px 0 80px 0;
+    text-transform: capitalize;
+    font-family: Roboto Slab;
+    color: #34495E;	
+}
+main .team{
+	display: flex;
+	justify-content: space-between;
+}
+
+main .team .git-fb{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+
+main .team .git-fb a{
+	text-decoration: none;
+	color: black;
+}
+main .team .git-fb a i{
+	cursor: pointer;
+}
+main .team .git-fb a i[class="fa fa-facebook-square fa-2x"]:hover{
+	color: #4267B2;
+	
+}
+
+main .team .git-fb a i[class="fa fa-twitter-square fa-2x"]:hover{
+	color: #2AA9E0;
+}
+
+main .team .git-fb a i[class="fa fa-github-square fa-2x"]:hover{
+	color: brown;
+}
+main .team .ghadeer,
+main .team .moath,
+main .team .mahmoud{
+	text-align: center;
+}
+
+main .team .ghadeer .photo,
+main .team .moath .photo,
+main .team .mahmoud .photo{
+	width: 200px;
+	height: 200px;
+	
+}
+
+main .team .ghadeer .photo img,
+main .team .moath .photo img,
+main .team .mahmoud .photo img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	box-shadow: 3px 3px 25px gray
+}
+
+main .team .bord{
+	border:1px solid rgb(186,186,186);
+	padding: 40px 40px 50px 40px;
+	position: relative;
+	color: rgb(33,33,33);
+	border-radius:5px;
+	-webkit-transition: all 1.2s ease;
+	-moz-transition: all 1.2s ease;
+	-o-transition: all 1.2s ease;
+	-ms-transition: all 1.2s ease;
+	transition: all 1.2s ease;
+	
+}
+
+/*main .team .bord:after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background-color: rgba(211, 188, 200, 0.41)
+}*/
+
+main .team .bord:hover{
+	position: relative;
+	z-index: 3333;
+	box-shadow: 2px 2px 25px rgb(186,186,186);
+	-webkit-transition: all 1.2s ease;
+	-moz-transition: all 1.2s ease;
+	-o-transition: all 1.2s ease;
+	-ms-transition: all 1.2s ease;
+	transition: all 1.2s ease;
+	 transform: perspective(1000px) translateZ(100px);
+	 /*perspective: 1000px;*/
+}
+
+main .head{
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 40px;
+	margin-top: 35px;
+	text-shadow: 1px 1px 15px gray
+}
+
+main .para{
+	line-height: 40px;
+}
+
+
+/*end team*/
+
+/*start footer*/
+
+footer{
+	background-color: #3C8AB8;
+	color: #FFF;
+	font-family: Rambla;
+}
+
+footer .foot{
+	font-size: 18px;
+	text-align: center;
+}
+
+footer .foot p{
+	/*text-align: center;*/
+	padding: 12px 0;
+}
+
+footer .foot p span{
+	text-transform: uppercase;
+}
+/*end footer*/

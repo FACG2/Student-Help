@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="author" content="student help">
+		<meta name="description" content="student help">
+		<meta name="viewport" content="initial-scale=1">
+		<link rel="stylesheet" href="css/profile-user.css">
+		<link href="https://fonts.googleapis.com/css?family=Rambla|Rancho|Reem+Kufi|Roboto+Slab|Ruda" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>profile</title>
+	</head>
+	<body>
+	<!-- start header and logo -->
+		<header>
+			<div class="container">
+				<div class="sign-up">
+					<div class="logo">
+						<a href="#"><h1>student help</h1></a>
+					</div>
+					<div class="log-sign">
+						<a href="#" target="_blank"><p>login</p></a>
+						<a href="#" target="_blank"><p>signup</p></a>
+					</div>
+				</div>
+			</div>
+
+		</header>
+		<!-- end header and logo -->
+
+		<!-- start navbar  -->
+		<nav>
+			<div class="container">
+				<ul>
+					<a href="#"><li>home</li></a>
+					<a href="#boooook" class="bokid"><li>books</li></a>
+					<a href="#search" class="bokid"><li>search</li></a>
+					<a href="#"><li>about</li></a>
+				</ul>
+			</div>
+		</nav>
+		<!-- end navbar -->
+
+		<!-- start user -->
+
+		<section>
+			<div class="container">
+				<div class="user">
+					<div class="photo">
+						<img src="assets/gha.jpg">
+					</div>
+					<div class="information">
+						<h2>Ghadeer Abed El-Nabi</h2>
+						<p> Eng.ghadeer93@gmail.com</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- end user -->		
+		<hr>
+		<!-- start board -->
+		<main>
+			<div class="container">
+				<div class="table-btn">
+					<table rules="none">
+						<caption>dashboard</caption>
+						<tr class="hed-font">
+							<th>id</th>
+							<th>name</th>
+							<th>author</th>
+							<th>version</th>
+							<th>isbn</th>
+							<th>status</th>
+							<th></th>
+							<th></th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>thomas calculus</td>
+							<td>joerge b. thomas</td>
+							<td>13 edition</td>
+							<td>832746827364</td>
+							<td>true</td>
+							<td><button class="edite">edite</button></td>
+							<td><button class="del">delete</button></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>thomas calculus</td>
+							<td>joerge b. thomas</td>
+							<td>13 edition</td>
+							<td>832746827364</td>
+							<td>true</td>
+							<td><button class="edite">edite</button></td>
+							<td><button class="del">delete</button></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>thomas calculus</td>
+							<td>joerge b. thomas</td>
+							<td>13 edition</td>
+							<td>832746827364</td>
+							<td>true</td>
+							<td><button class="edite">edite</button></td>
+							<td><button class="del">delete</button></td>
+						</tr>	
+					</table>
+					<div class="btn">
+						<button id="mybtn" class="add">add</button>
+					</div>				
+				</div>
+			</div>
+		</main>
+		<!-- end board -->
+
+		<!-- start modal box -->
+		<div id="mymodal" class="modal">
+			<div class="container">
+				<div class="modal-content">
+					<div class="modal-header">
+						<span class="close">&times;</span>
+						<h2>add book</h2>
+					</div>
+					<div class="modal-body">
+						<form id="form" action="/" method="POST">
+							<label>title</label><br>
+							<input type="text" name="title">
+							<br><br>
+							<label>author</label><br>
+							<input type="text" name="author">
+							<br><br>
+							<label>version</label><br>
+							<input type="text" name="version">
+							<br><br>
+							<label>isbn</label><br>
+							<input type="text" name="isbn">
+							<br><br><br>
+							<div class="btn-center">
+								<button>add book</button>
+							</div>
+						</form>
+					</div>
+				</div>				
+			</div>
+			
+		</div>
+		<!-- end modal box -->
+		<!-- start footer -->
+
+		<footer>
+			<div class="container">
+				<div class="foot">
+					<p>&copy;All rights reserved to&nbsp;<span>m2g</span></p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- end footer -->	
+
+		<script src="js/modal-box.js" type="text/javascript"></script>		
+	</body>
+</html>

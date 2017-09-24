@@ -1,0 +1,332 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	max-width: 1000px;
+	width: 100%;
+	margin: auto;
+}
+
+.container-book{
+	max-width: 700px;
+	width: 100%;
+	margin: auto;
+}
+/*start header and logo*/
+header{
+	background-color: #F2F2F2;
+	
+}
+
+.sign-up{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+.sign-up .logo a{
+	text-decoration: none;
+}
+.sign-up .logo a h1{
+	color: #2D9CDB;
+	font-family: Ruda;
+	text-transform: capitalize;
+
+}
+
+.log-sign{
+	display: flex;
+	justify-content: space-between;
+}
+
+.log-sign a{
+	text-decoration: none;
+	color: black;
+	align-self: center;
+	cursor: pointer;
+	font-family: Reem Kufi;
+	text-transform: capitalize;
+	font-size: 18px;
+}
+
+.log-sign a:first-child{
+	margin-right: 10px;
+}
+
+/*end header and logo*/
+
+/*start navbar*/
+nav{
+	background-color: #3C8AB8;
+	box-shadow: 2px 2px 25px #3C8AB8;
+	
+}
+nav ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 0;
+	font-family: Reem Kufi;
+	color: #FFF;
+	text-transform: capitalize;
+	font-size: 22px;
+	font-weight: bold
+}
+
+nav ul a li{
+	cursor: pointer;
+	line-height: 50px;
+	padding: 0 15px;
+}
+nav ul a{
+	color: #FFF;
+	text-decoration: none;
+}
+
+nav ul li:hover{
+	background-color: #FFF;
+	color: #000;
+}
+
+/*end navbar*/
+
+
+/*start user*/
+section{
+	padding: 50px 0;
+}
+
+section .user{
+	display: flex;
+	justify-content: space-around;
+}
+
+section .user .photo{
+	width: 25%;
+	
+
+}
+
+section .user .photo img{
+	width: 100%;
+	height: 100%;
+}
+
+section .user .information{
+	width: 60%;
+	padding: 20px 0 0 0;
+}
+section .user .information p{
+	line-height: 40px;
+}
+/*end user*/
+
+
+
+/*start board*/
+
+main{
+	padding: 50px 0;
+}
+
+main .table-btn{
+	display: flex;
+	justify-content: space-between;
+}
+
+main table{
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0;	
+}
+
+main table caption{
+	padding: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+main table tr th{
+	text-transform: uppercase;	
+}
+main table tr{
+	/*border-bottom:1px solid #CCC;*/
+
+}
+
+tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+main table tr th,
+main table tr td{
+	padding: 10px;
+}
+
+main table tr td{
+	text-align: center;
+}
+
+main table tr td button{
+	padding: 10px 30px;
+	font-size: 14px;
+	border:none;
+	color: #FFF;
+	cursor: pointer;
+}
+main table tr td button[class="edite"]{
+	background-color: #2ECC71
+}
+main table tr td button[class="del"]{
+	background-color: #CF000F
+}
+
+main .table-btn .btn .add{
+	border:none;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	color: #FFF;
+	background-color: #2ECC71;
+	border-radius: 50%;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+/*end board*/
+
+/*start modal*/
+
+.modal{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.6);
+	overflow: auto;
+	z-index: 1;
+}
+
+.modal .modal-content{
+	width: 90%;
+	position: relative;
+	top: 100px;
+	background-color: #fefefe;
+	box-shadow: 0 4px 8px  rgba(0,0,0,0.2),
+	 			0 6px 20px rgba(0,0,0,0.19);
+	border:1px solid #888;
+	border-radius: 10px;
+	padding: 5px 0 30px 0;
+	animation: animatetop 0.6s;
+}
+
+.modal .modal-content .modal-header{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	color: #000;
+}
+
+.modal .modal-content .modal-header span{
+	padding: 10px 15px 0 0;	
+	font-size: 26px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+}
+
+.modal .modal-content .modal-header span:hover{
+	color: red;
+}
+
+
+.modal .modal-content .modal-header h2{
+	padding: 10px 0 0 40px;
+	text-transform: capitalize;
+
+}
+.modal .modal-content .modal-body{
+	display: flex;
+	justify-content: center;
+	padding-top: 15px;
+}
+
+
+.modal .modal-content .modal-body form label{
+	color: #AAA5A5;
+	text-transform: capitalize;
+	font-family: Rambla;
+	font-size: 20px;
+}
+
+.modal .modal-content .modal-body form input{
+	border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #AAA5A5;
+    width: 400px;
+    padding: 6px 0;
+    outline: none;
+    text-indent: 10px;
+    font-size: 16px;
+    font-family: Rambla;
+}
+
+.modal .modal-content .modal-body form .btn-center{
+	text-align: center;
+}
+.modal .modal-content .modal-body form .btn-center button{
+	font-family: Rambla;
+	color: #F4F4F4;
+	font-size: 30px;	
+	background: #2D9CDB;
+	border-radius: 50px;
+	border:none;
+	padding: 7px 23px;
+	text-transform: capitalize;
+	outline: none;
+	cursor: pointer;
+}
+/*end modal*/
+
+/*start footer*/
+
+footer{
+	background-color: #3C8AB8;
+	color: #FFF;
+	font-family: Rambla;
+	
+}
+
+footer .foot{
+	font-size: 18px;
+	text-align: center;
+}
+
+footer .foot p{
+	/*text-align: center;*/
+	padding: 12px 0;
+}
+
+footer .foot p span{
+	text-transform: uppercase;
+}
+/*end footer*/
+
+
+
+
+/*animation and keyframes*/
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 100px; opacity: 1}
+}
