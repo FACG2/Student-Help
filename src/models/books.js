@@ -26,7 +26,7 @@ exports.addBook = (obj, cb) => {
     values: [obj.title, obj.isbn, obj.version, obj.auther, obj.img_url, obj.status, obj.booking_date]
 
 
-//   };
+  };
 //   connection.query(sql, (err, result) => {
 //     if (err) {
 //       const existed = new error('Existed Book');
@@ -35,7 +35,7 @@ exports.addBook = (obj, cb) => {
 //       cb(null, result);
 //     }
 //   });
-// };
+};
 
 // update book
 exports.updateBook = (obj, cb) => {
