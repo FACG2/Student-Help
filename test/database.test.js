@@ -8,9 +8,7 @@ const connection = require('../src/models/database/db_connection.js');
 
 test('get user', (t) => {
   moduleuser.getUserByemail('ghadeer.box@gmail.com', (err, res) => {
-    if (err) {
       t.notOk(err);
-    } else {
       var actual = res[0];
       var expected = {
         name: 'ghadeer',
@@ -20,7 +18,6 @@ test('get user', (t) => {
       };
       t.deepEqual(actual, expected, 'should return an object with you have personal information for Ghadeer ');
       t.end();
-    }
   });
 });
 
