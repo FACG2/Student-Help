@@ -4,8 +4,10 @@
   "description": "## Project Team @mahmne , @moath14 , @Ghadeer93 :relaxed:",
   "main": "index.js",
   "scripts": {
-    "test": "node test/database.test.js",
+    "test": "export NODE_ENV=yrdy && npm run db:drop && npm run db:create && node test/database.test.js",
     "coverage": "nyc npm run test",
+    "db:create": "psql -c 'CREATE DATABASE tests;' -U postgres -h localhost",
+    "db:drop": "psql -c 'DROP DATABASE IF EXISTS tests;' -U postgres -h localhost",
     "start": "nodemon src/index.js"
   },
   "repository": {
