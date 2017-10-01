@@ -42,8 +42,5 @@
   "dependencies": {
     "cookie-parser": "^1.4.3",
     "express": "^4.15.4"
-  },
-  "directories": {
-    "test": "test"
   }
 }
