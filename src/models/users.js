@@ -23,7 +23,7 @@ exports.getUser = (name, email, cb) => {
   };
   connection.query(sql, (err, result) => {
     if (err) {
-      const existed = new error('Error in getting all users');
+      const existed = new Error('Error in getting all users');
     } else {
       cb(null, result.rows[0]);
     }
@@ -38,7 +38,7 @@ exports.getUserByemail = (email, cb) => {
   };
   connection.query(sql, (err, result) => {
     if (err) {
-      const existed = new error('Error in getting all users');
+      const existed = new Error('Error in getting all users');
     } else {
       cb(null, result.rows);
     }
@@ -53,7 +53,7 @@ exports.getUserByName = (name, cb) => {
   };
   connection.query(sql, (err, result) => {
     if (err) {
-      const existed = new error('Error in getting all users');
+      const existed = new Error('Error in getting all users');
     } else {
       cb(null, result.rows[0]);
     }
@@ -68,7 +68,7 @@ exports.Updateuser = (obj, cb) => {
   };
   connection.query(sql, (err, result) => {
     if (err) {
-      const errupdate = new error('Cant make Update');
+      const errupdate = new Error('Cant make Update');
     } else {
       cb(null, result.rows[0]);
     }
@@ -79,7 +79,7 @@ exports.Updateuser = (obj, cb) => {
 exports.CheckuserByname = (name, cb) => {
   getUserByName(name, (err, result) => {
     if (err) {
-      const notexisted = new error('Error in getting  User');
+      const notexisted = new Error('Error in getting  User');
     } else {
       if (result) {
         cb(null, result.name === name);
@@ -93,7 +93,7 @@ exports.CheckuserByname = (name, cb) => {
 exports.CheckuserByemail = (email, cb) => {
   getUserByemail(email, (err, result) => {
     if (err) {
-      const notexisted = new error('Error in getting  User');
+      const notexisted = new Error('Error in getting  User');
     } else {
       if (result.length) {
         cb(null, result[0].email === email);
@@ -107,7 +107,7 @@ exports.CheckuserByemail = (email, cb) => {
 exports.Checkuser = (name, mail, cb) => {
   getUser(name, email, (err, result) => {
     if (err) {
-      const notexisted = new error('Error in getting  User');
+      const notexisted = new Error('Error in getting  User');
     } else {
       if (result) {
         cb(null, result.email === email && result.name === name);
