@@ -24,15 +24,9 @@
   },
   "homepage": "https://github.com/FACG2/Student-Help#readme",
   "devDependencies": {
-    "bcryptjs": "^2.4.3",
-    "cookie": "^0.3.1",
     "env": "0.0.2",
     "env2": "^2.2.0",
-    "express-validator": "^4.1.1",
-    "jsonwebtoken": "^8.0.1",
     "nodemon": "^1.12.1",
-    "path": "^0.12.7",
-    "pg": "^7.3.0",
     "pre-commit": "^1.2.2",
     "semistandard": "^11.0.0",
     "shot": "^3.4.2",
@@ -41,6 +35,12 @@
     "tape": "^4.8.0"
   },
   "dependencies": {
+    "jsonwebtoken": "^8.0.1",
+    "express-validator": "^4.1.1",
+    "cookie": "^0.3.1",
+    "bcryptjs": "^2.4.3",
+    "pg": "^7.3.0",
+    "path": "^0.12.7",
     "nyc": "^11.2.1",
     "body-parser": "^1.18.1",
     "express-handlebars": "^3.0.0",
