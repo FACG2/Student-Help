@@ -8,7 +8,7 @@ exports.get = (req, res) => {
     if (err) {
       next(err);
     } else {
-      res.render('moreBook', {books, user,name});
+      res.render('moreBook', {books, user, name});
     }
   });
 };

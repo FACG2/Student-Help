@@ -1,4 +1,3 @@
-const userModel = require('../models/users');
 
 exports.get = (req, res) => {
   cookie = req.cookies;

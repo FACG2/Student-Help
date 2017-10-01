@@ -1,6 +1,5 @@
 const book = require('../models/books.js');
 
-
 exports.get = (req, res, next) => {
   const user = req.user;
   const name = req.name;
@@ -8,7 +7,7 @@ exports.get = (req, res, next) => {
     if (err) {
       next(err);
     } else {
-      res.render('home', {books, user,name});
+      res.render('home', {books, user, name});
     }
   });
 };
@@ -17,7 +16,7 @@ exports.getabout = (req, res) => {
   const user = req.user;
   const name = req.name;
 
-  res.render('about', {user,name});
+  res.render('about', {user, name});
 };
 
 exports.getbooks = (req, res) => {
@@ -28,7 +27,7 @@ exports.getbooks = (req, res) => {
     if (err) {
       next(err);
     } else {
-      res.render('books', {books, user,name});
+      res.render('books', {books, user, name});
     }
   });
 };
@@ -40,7 +39,7 @@ exports.getAllbooks = (req, res) => {
     if (err) {
       next(err);
     } else {
-      res.render('moreBook', {books, user,name});
+      res.render('moreBook', {books, user, name});
     }
   });
 };
@@ -53,7 +52,7 @@ exports.get4books = (req, res) => {
     if (err) {
       next(err);
     } else {
-      res.render('books', {books, user,name});
+      res.render('books', {books, user, name});
     }
   });
 };
@@ -68,7 +67,7 @@ exports.search = (req, res, next) => {
     if (err) {
       next(err);
     } else {
-      res.render('search', {data, user,name});
+      res.render('search', {data, user, name});
     }
   });
 };

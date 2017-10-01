@@ -23,7 +23,7 @@ exports.getUser = (name, email, cb) => {
   };
   connection.query(sql, (err, result) => {
     if (err) {
-      const existed = new Error('Error in getting all users');
+      throw err;
     } else {
       cb(null, result.rows[0]);
     }
@@ -38,24 +38,9 @@ exports.getUserByemail = (email, cb) => {
   };
   connection.query(sql, (err, result) => {
     if (err) {
-      const existed = new Error('Error in getting all users');
+      throw err;
     } else {
       cb(null, result.rows);
-    }
-  });
-};
-
-// git user by only name
-exports.getUserByName = (name, cb) => {
-  const sql = {
-    text: `SELECT name FROM students WHERE name = $1`,
-    values: [email]
-  };
-  connection.query(sql, (err, result) => {
-    if (err) {
-      const existed = new Error('Error in getting all users');
-    } else {
-      cb(null, result.rows[0]);
     }
   });
 };
@@ -68,52 +53,10 @@ exports.Updateuser = (obj, cb) => {
   };
   connection.query(sql, (err, result) => {
     if (err) {
-      const errupdate = new Error('Cant make Update');
+      throw err;
     } else {
       cb(null, result.rows[0]);
     }
   });
 };
 
-// make checkuser by name
-exports.CheckuserByname = (name, cb) => {
-  getUserByName(name, (err, result) => {
-    if (err) {
-      const notexisted = new Error('Error in getting  User');
-    } else {
-      if (result) {
-        cb(null, result.name === name);
-      } else {
-        cb(null, false);
-      }
-    }
-  });
-};
-// make checkuser by email
-exports.CheckuserByemail = (email, cb) => {
-  getUserByemail(email, (err, result) => {
-    if (err) {
-      const notexisted = new Error('Error in getting  User');
-    } else {
-      if (result.length) {
-        cb(null, result[0].email === email);
-      } else {
-        cb(null, false);
-      }
-    }
-  });
-};
-// make checkuser by name and email
-exports.Checkuser = (name, mail, cb) => {
-  getUser(name, email, (err, result) => {
-    if (err) {
-      const notexisted = new Error('Error in getting  User');
-    } else {
-      if (result) {
-        cb(null, result.email === email && result.name === name);
-      } else {
-        cb(null, false);
-      }
-    }
-  });
-};
