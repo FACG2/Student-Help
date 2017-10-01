@@ -38,7 +38,7 @@ exports.getUserByemail = (email, cb) => {
   };
   connection.query(sql, (err, result) => {
     if (err) {
-      const existed = new error('Error in getting all users');
+      const existed = new Error('Error in getting all users');
     } else {
       cb(null, result.rows);
     }
