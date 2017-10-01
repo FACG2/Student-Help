@@ -4,7 +4,7 @@ exports.get = (req, res) => {
   const user = req.user;
   const name = req.name;
 
-  res.render('search', {user,name});
+  res.render('search', {user, name});
 };
 
 exports.search = (req, res, next) => {
@@ -17,7 +17,7 @@ exports.search = (req, res, next) => {
     if (err) {
       next(err);
     } else {
-      res.render('search', {data, user,name});
+      res.render('search', {data, user, name});
     }
   });
 };
