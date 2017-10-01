@@ -58,7 +58,7 @@ test('Testing database connection', (t) => {
 });
 
 test('Testing students', (t) => {
-  const sql = 'SELECT * FROM students WHERE email = "ghadeer@gmail.com"';
+  const sql = `SELECT * FROM students WHERE email = 'ghadeer.box@gmail.com'`;
   connection.query(sql, (err, res) => {
     if (err) {
       t.notOk(!err, err);
