@@ -1,4 +1,4 @@
-BEGIN;
+	BEGIN;
 
 DROP TABLE IF EXISTS students  CASCADE;
 DROP TABLE IF EXISTS books  CASCADE;
@@ -35,7 +35,6 @@ INSERT INTO students (name, email, password, img) VALUES
 
   ('mahmoud', 'mahmoud.box@gmail.com', '123456', 'mahmoud.png'),
   ('ghadeer', 'ghadeer.box@gmail.com', '$2a$08$WsD9bqU5GQdcjk4.eC0JkeCOhdRaVJL5x2gU0OF/vG/pKzeSAExy6', 'ghadeer.png'),
-
   ('moath', 'moath.box@gmail.com', '12356', 'moath.png');
 
 INSERT INTO books (title, isbn, version, auther, img_url,creator_email,status,borrower_email,booking_date) VALUES
