@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "db:build": "node src/models/database/db_build.js",
-    "test": "tape test/**/*.test.js",
+    "test": "npm run db:build && tape test/**/*.test.js",
     "test:local": " node test/database.test.js",
     "coverage": "nyc npm run test",
     "db:create": "psql -c 'CREATE DATABASE tests;' -U postgres -h localhost",
