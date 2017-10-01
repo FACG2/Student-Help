@@ -42,10 +42,12 @@
 					<td>{{this.auther}}</td>
 					<td class = 'img-src'><img src = "{{this.img_url}}"></td>
 
+
 					<td><button id="mybtn1" class="add" style = "background-color:#2ECC71;outline:none" onclick="return getdata({{this.id}});">
 						Edit
 					</button></td>
 					<td><button class="del"><a  href ="/deleteBook/{{this.id}}">delete</a></button></td>
+
 				</tr>
 				{{/each}}
 			</table>
@@ -58,6 +60,7 @@
 <!-- end board -->
 
 <!-- start modal box -->
+
 <div id="mymodal" class="modal">
 	<div class="container">
 		<div class="modal-content">
@@ -95,15 +98,15 @@
 
 <!-- start modal box for edit -->
 
-<div id="mymodal1" class="modal">
+<div id="mymodal1" class="modal1">
 	<div class="container">
-		<div class="modal-content">
+		<div class="modal-content1">
 			<div class="modal-header">
 				<span class="close1">&times;</span>
 				<h2>update book</h2>
 			</div>
 			<div class="modal-body">
-				<form id="form" action="/updatebook" method="POST">
+				<form id="form" action="/updateBook" method="POST">
 					<label>title</label><br>
 					<input type="text" name="title" id ='updateModalTitle' >
 					<br><br>
@@ -142,6 +145,7 @@
 
 <!-- end msg -->
 <script src="js/modal-box.js" type="text/javascript"></script>
+<script src="js/modal-box1.js" type="text/javascript"></script>
 <script type="text/javascript">
 	function getdata	(id){
 		fetch('/book/'+id)

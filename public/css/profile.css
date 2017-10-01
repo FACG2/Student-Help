@@ -233,7 +233,32 @@ main .table-btn .btn .add{
 	z-index: 1;
 }
 
+.modal1{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.6);
+	overflow: auto;
+	z-index: 1;
+}
+
 .modal .modal-content{
+	width: 90%;
+	position: relative;
+	top: 60px;
+	background-color: #fefefe;
+	box-shadow: 0 4px 8px  rgba(0,0,0,0.2),
+	 			0 6px 20px rgba(0,0,0,0.19);
+	border:1px solid #888;
+	border-radius: 10px;
+	padding: 5px 0 30px 0;
+	animation: animatetop 0.6s;
+}
+
+.modal1 .modal-content1{
 	width: 90%;
 	position: relative;
 	top: 60px;
@@ -282,7 +307,22 @@ main .table-btn .btn .add{
 	color: #000;
 }
 
+.modal1 .modal-content1 .modal-header{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	color: #000;
+}
+
 .modal .modal-content .modal-header span{
+	padding: 10px 15px 0 0;
+	font-size: 26px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: bold;
+}
+
+.modal1 .modal-content1 .modal-header span{
 	padding: 10px 15px 0 0;
 	font-size: 26px;
 	cursor: pointer;
@@ -294,20 +334,42 @@ main .table-btn .btn .add{
 	color: red;
 }
 
+.modal1 .modal-content1 .modal-header span:hover{
+	color: red;
+}
 
 .modal .modal-content .modal-header h2{
 	padding: 10px 0 0 40px;
 	text-transform: capitalize;
 
 }
+
+.modal1 .modal-content1 .modal-header h2{
+	padding: 10px 0 0 40px;
+	text-transform: capitalize;
+
+}
+
 .modal .modal-content .modal-body{
 	display: flex;
 	justify-content: center;
 	padding-top: 15px;
 }
 
+.modal1 .modal-content1 .modal-body{
+	display: flex;
+	justify-content: center;
+	padding-top: 15px;
+}
 
 .modal .modal-content .modal-body form label{
+	color: #AAA5A5;
+	text-transform: capitalize;
+	font-family: Rambla;
+	font-size: 20px;
+}
+
+.modal1 .modal-content1 .modal-body form label{
 	color: #AAA5A5;
 	text-transform: capitalize;
 	font-family: Rambla;
@@ -327,10 +389,42 @@ main .table-btn .btn .add{
     font-family: Rambla;
 }
 
+.modal1 .modal-content1 .modal-body form input{
+	border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #AAA5A5;
+    width: 400px;
+    padding: 6px 0;
+    outline: none;
+    text-indent: 10px;
+    font-size: 16px;
+    font-family: Rambla;
+}
+
 .modal .modal-content .modal-body form .btn-center{
 	text-align: center;
 }
+
+.modal1 .modal-content1 .modal-body form .btn-center{
+	text-align: center;
+}
+
+
 .modal .modal-content .modal-body form .btn-center button{
+	font-family: Rambla;
+	color: #F4F4F4;
+	font-size: 30px;
+	background: #2D9CDB;
+	border-radius: 50px;
+	border:none;
+	padding: 7px 23px;
+	text-transform: capitalize;
+	outline: none;
+	cursor: pointer;
+}
+
+.modal1 .modal-content1 .modal-body form .btn-center button{
 	font-family: Rambla;
 	color: #F4F4F4;
 	font-size: 30px;
