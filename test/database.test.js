@@ -6,19 +6,18 @@ const moduleuser = require('../src/models/users');
 const modulebook = require('../src/models/books');
 const connection = require('../src/models/database/db_connection.js');
 
-
 test('get user', (t) => {
-  moduleuser.getUserByemail('ghadeer@gmail.com',(err, res) => {
+  moduleuser.getUserByemail('ghadeer.box@gmail.com', (err, res) => {
     if (err) {
       t.notOk(err);
     } else {
-      var actual = res[0]
+      var actual = res[0];
       var expected = {
-        name: 'Ghadeer93',
-        email: 'ghadeer@gmail.com',
+        name: 'ghadeer',
+        email: 'ghadeer.box@gmail.com',
         password: '$2a$08$WsD9bqU5GQdcjk4.eC0JkeCOhdRaVJL5x2gU0OF/vG/pKzeSAExy6',
-        img: 'user_avatar.png'
-         };
+        img: 'ghadeer.png'
+      };
       t.deepEqual(actual, expected, 'should return an object with you have personal information for Ghadeer ');
       t.end();
     }
