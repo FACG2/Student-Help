@@ -23,7 +23,6 @@ Some students can not provide because of the lack of money
 Books :closed_book:  >> Study :pencil2:  >> High marks :gift: >> graduation :mortar_board: >> working :dollar: >> travel ant where :airplane:  >> finally make block for friends :tada:
 
 
-
 **User test tasks**
 
 * How to create account on app
