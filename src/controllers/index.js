@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 
 const home = require('./homeController');
-const auth = require('../middlewares/auth.js');
 const signupController = require('./signupController');
 const loginController = require('./loginController');
 const logoutController = require('./logoutController');
@@ -42,8 +41,6 @@ router.get('/profile', profileController.get);
 router.get('/deleteBook/:id', profileController.delete);
 router.get('/updateBook/:id', profileController.update);
 router.get('/book/:id', profileController.getBookById);
-
-
 
 // function for moreBookController
 router.get('/moreBook', moreBookController.get);
