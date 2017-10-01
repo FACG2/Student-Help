@@ -39,7 +39,8 @@ bookModel.getBookById(req.params.id, (err, books) => {
         res.send(books.rows[0])
 });
 };
-exports.Update = (req, res, next) => {
+
+exports.update = (req, res, next) => {
 
   bookModel.updateBook(
     req.body.id,req.body.title,
