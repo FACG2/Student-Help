@@ -4,7 +4,7 @@
 	<div class="container">
 		<div class="user">
 			<div class="photo">
-				<img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg">
+				<img src="https://x1.xingassets.com/assets/frontend_minified/img/users/nobody_m.original.jpg" alt = "user">
 			</div>
 			<div class="information">
 				<h2>{{userInfo.name}}</h2>
@@ -40,7 +40,7 @@
 					<td>{{this.isbn}}</td>
 					<td>{{this.version}}</td>
 					<td>{{this.auther}}</td>
-					<td class = 'img-src'><img src = "{{this.img_url}}"></td>
+					<td class = 'img-src'><img src = "{{this.img_url}}" alt = "book photo"></td>
 
 
 					<td><button id="mybtn1" class="add" style = "background-color:#2ECC71;outline:none" onclick="return getdata({{this.id}});">
@@ -106,7 +106,7 @@
 				<h2>update book</h2>
 			</div>
 			<div class="modal-body">
-				<form id="form" action="/updateBook" method="POST">
+				<form id="form1" action="/updateBook" method="POST">
 					<label>title</label><br>
 					<input type="text" name="title" id ='updateModalTitle' >
 					<br><br>
