@@ -16,9 +16,9 @@
   margin: auto;
 }
 /*start header and logo*/
-header{
+/*header{
   background-color: #F2F2F2;
-}
+}*/
 
 .sign-up{
   display: flex;
@@ -456,7 +456,7 @@ main .para{
 
 footer{
   background-color: #3C8AB8;
-  color: #FFF;
+  /*color: #FFF;*/
   font-family: Rambla;
 }
 
@@ -468,6 +468,7 @@ footer .foot{
 footer .foot p{
   /*text-align: center;*/
   padding: 12px 0;
+  color: #000;
 }
 
 footer .foot p span{
